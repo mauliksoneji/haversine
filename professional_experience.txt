@@ -23,4 +23,10 @@ We faced many setbacks like when we fell behind on schedule due to college exams
 
 Despite these setbacks, we were able to complete the project and get the Software Acceptance Letter from the client.
 
-This was my first experience with Project Management and I 
+This was my first experience with Project Management and It made me realise how software development is a process containing different parts like Requirement Gathering, Designing, Software Development and Testing.
+
+There are still many things that I learnt from the project which would be too long to explain. You can ask me details if we proceed with the hiring process.
+
+I still have the code and documents that we developed during the project with me.
+These can be found out here: 
+https://drive.google.com/drive/u/0/folders/0BxcIbEip2qh8fjZfeHNzcldzVThUaGZSd2RFS0ZMYUFrRTZMOWdoVWQxdjNoY2h4OFdvRVU
