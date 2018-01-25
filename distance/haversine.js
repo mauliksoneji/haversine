@@ -22,6 +22,5 @@ module.exports = function calculateHaversineDistance(p1, p2) {
 
   const distanceInKms = MathHelper.multByRadiusOfEarthInKM(factor);
 
-  p1.distance = distanceInKms;
   return distanceInKms;
 };

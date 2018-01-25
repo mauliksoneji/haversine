@@ -1,9 +1,21 @@
+const fs = require('fs');
 const main = require('./src/index');
 
-const IRELAND_OFFICE_COORDINATES = { latitude: 53.339428, longitude: -6.257664 };
-const MAX_DISTANCE_FROM_OFFICE = 100;
-const DATA_SOURCE_PATH = './data/data.txt';
+const configFile = process.env.config || './config/config.json';
 
-const pointsWithin100Kms = main(DATA_SOURCE_PATH, IRELAND_OFFICE_COORDINATES, MAX_DISTANCE_FROM_OFFICE);
+const configurationData = fs.readFileSync(configFile);
 
-console.log('Offices that are within 100 kms distance of Ireland office are', pointsWithin100Kms);
+const configJSONData = JSON.parse(configurationData);
+
+const data_path = configJSONData.data_path;
+
+const source_point = {
+  latitude: configJSONData.latitude,
+  longitude: configJSONData.longitude
+};
+
+const max_distance = configJSONData.max_distance;
+
+const pointsWithinDistance = main(data_path, source_point, max_distance);
+
+console.log(`Points in file path ${data_path} that are within ${max_distance} kms from latitude: ${source_point.latitude}, longitude: ${source_point.longitude} are`, pointsWithinDistance);

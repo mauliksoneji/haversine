@@ -18,6 +18,7 @@ fileTestObj.testJSONData();
 
 sortTestObj.testSortFunction();
 
+integrationTestObj.testInvalidInputParameters();
 integrationTestObj.testFileWithSameUserId();
 integrationTestObj.testFileWithMissingProperty();
 integrationTestObj.testFileWithDenseProperData();

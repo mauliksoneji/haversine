@@ -9,11 +9,39 @@ const SOURCE_COORDINATES = { latitude: 37.09024, longitude: -95.71289100000001 }
 
 module.exports = class IntegrationTestUtil {
   /**
+   * Checks if passing null arguments to program throws error
+   */
+  testInvalidInputParameters() {
+    // invalid source directory path
+    assert.throws(() => findPointsWithinRange(null,SOURCE_COORDINATES, 100), (err) => {
+      if ((err instanceof InvalidDataError) && /file path to read points/.test(err)) {
+        return true;
+      }
+      return false;
+    }, 'Expected to throw file path to read points exception');
+
+    // invalid source directory path
+    assert.throws(() => findPointsWithinRange('./data/data.txt',null, 100), (err) => {
+      if ((err instanceof InvalidDataError) && /Invalid sourcePoint/.test(err)) {
+        return true;
+      }
+      return false;
+    }, 'Expected to throw Invalid sourcePoint exception');
+
+    // invalid source directory path
+    assert.throws(() => findPointsWithinRange('./data/data.txt',SOURCE_COORDINATES, null), (err) => {
+      if ((err instanceof InvalidDataError) && /max distance/.test(err)) {
+        return true;
+      }
+      return false;
+    }, 'Expected to throw max distance exception');
+  }
+  /**
    * Checks if reading from file having same user id content
    * throw an InvalidDataError error
    */
   testFileWithSameUserId() {
-    assert.throws(() => findPointsWithinRange('./data/improper_test_same_user_id_data.txt'), (err) => {
+    assert.throws(() => findPointsWithinRange('./data/improper_test_same_user_id_data.txt',SOURCE_COORDINATES, 100), (err) => {
       if ((err instanceof InvalidDataError) && /user_id field should be unique/.test(err)) {
         return true;
       }
@@ -31,7 +59,7 @@ module.exports = class IntegrationTestUtil {
    * throws an InvalidDataError error
    */
   testFileWithMissingProperty() {
-    assert.throws(() => findPointsWithinRange('./data/improper_test_missing_fields_data.txt'), (err) => {
+    assert.throws(() => findPointsWithinRange('./data/improper_test_missing_fields_data.txt',SOURCE_COORDINATES, 100), (err) => {
       if ((err instanceof InvalidDataError) && /There is no property/.test(err)) {
         return true;
       }

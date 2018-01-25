@@ -5,6 +5,25 @@ const ValidationUtilHelper = require('../util/validate');
 const calculateHaversineDistance = require('../distance/haversine');
 const filterByPlanarDistance = require('../distance/plane');
 
+const InvalidDataError = ValidationUtilHelper.InvalidDataError;
+
+/**
+ * Checks if the Input parameters are proper
+ */
+function checkInputParameters(dataSourceFileName, sourcePoint, max_distance) {
+  if (!dataSourceFileName) {
+    throw new InvalidDataError(`Expected a file path to read points data from. Got ${dataSourceFileName}`);
+  }
+
+  if (!sourcePoint || !('longitude' in sourcePoint) || !('latitude' in sourcePoint)) {
+    throw new InvalidDataError(`Invalid sourcePoint: ${sourcePoint}`);
+  }
+
+  if (!max_distance) {
+    throw new InvalidDataError('Please provide max distance from source point to filter points');
+  }
+}
+
 /**
  * Takes in points array, source point
  * and the max distance to filter by.
@@ -19,7 +38,7 @@ const filterByPlanarDistance = require('../distance/plane');
  */
 function calculatePointsWithinDistance(points, sourcePoint, max_distance) {
   console.time('calculatePointsWithinDistance');
-  const within100Kms = points.filter(point => filterByPlanarDistance(point, sourcePoint, max_distance))
+  const pointsWithinDistance = points.filter(point => filterByPlanarDistance(point, sourcePoint, max_distance))
                             .filter(point => calculateHaversineDistance(point, sourcePoint) < max_distance)
                             .sort(SortUtilHelper.sortByUserId)
                             .map(obj => ({
@@ -27,7 +46,7 @@ function calculatePointsWithinDistance(points, sourcePoint, max_distance) {
                               user_id: obj.user_id
                             }));
   console.timeEnd('calculatePointsWithinDistance');
-  return within100Kms;
+  return pointsWithinDistance;
 }
 
 /**
@@ -46,12 +65,16 @@ function calculatePointsWithinDistance(points, sourcePoint, max_distance) {
  * InvalidDataError: If the file contains invalid data
  */
 module.exports = function main(dataSourceFileName, sourcePoint, max_distance) {
+  checkInputParameters(dataSourceFileName, sourcePoint, max_distance);
+
   console.time('totalTimeToFindPoints');
+
   const points = FileUtilHelper.readContentFromFileSync(dataSourceFileName); // read file and convert to JSON Array
 
   ValidationUtilHelper.validateInput(points); // Validate Input, throws Error in case of Invalid data
 
-  const within100Kms = calculatePointsWithinDistance(points, sourcePoint, max_distance);
+  const pointsWithinDistance = calculatePointsWithinDistance(points, sourcePoint, max_distance);
   console.timeEnd('totalTimeToFindPoints');
-  return within100Kms;
+
+  return pointsWithinDistance;
 };
