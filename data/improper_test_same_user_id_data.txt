@@ -1,0 +1,20 @@
+{"latitude": "36.58625616", "user_id": 18, "name": "McDonalds", "longitude": "-94.04344854"} 
+{"latitude": "37.57226133", "user_id": 18, "name": "Dominos", "longitude": "-95.25540863"}
+{"latitude": "36.91002613", "user_id": 17, "name": "Taco Bell", "longitude": "-94.82896939"}
+{"latitude": "37.4248972", "user_id": 16, "name": "Subway", "longitude": "-97.07624953"}
+{"latitude": "36.90981324", "user_id": 2, "name": "Indian Restaurant", "longitude": "-97.01169491"}
+{"latitude": "37.0448882", "user_id": 5, "name":"Yves Haggett", "longitude": "-97.32171475"}
+{"latitude": "37.14818046", "user_id": 3, "name":"Joby Rudefort", "longitude": "-96.41976282"}
+{"latitude": "36.96079858", "user_id": 7, "name":"Armin Kingsma", "longitude": "-94.27965342"}
+{"latitude": "34.44034434", "user_id": 22, "name":"Siana Boothma", "longitude": "-96.00860137"}
+{"latitude": "37.84666009", "user_id": 11, "name":"Murvyn Playford", "longitude": "-94.14724962"}
+{"latitude": "37.50955111", "user_id": 32, "name":"Eirena Bellany", "longitude": "-97.22995879"}
+{"latitude": "36.48429336", "user_id": 41, "name":"Erhard Doubrava", "longitude": "-92.482066"}
+{"latitude": "36.62223246", "user_id": 16, "name":"Jacinda Fitchet", "longitude": "-93.9715118"}
+{"latitude": "38.48743611", "user_id": 9, "name":"Toiboid Mapleth", "longitude": "-93.68737834"}
+{"latitude": "35.75097346", "user_id": 19, "name":"Leonora Craske", "longitude": "-96.16685386"}
+{"latitude": "38.04198583", "user_id": 28, "name":"Timoteo Shorbro", "longitude": "-97.10744811"}
+{"latitude": "40.6856015", "user_id": 29, "name":"Ansel Bruniges", "longitude": "-95.39621869"}
+{"latitude": "34.60332952", "user_id": 33, "name":"Henryetta Me", "longitude": "-95.33236863"}
+{"latitude": "40.41195038", "user_id": 41, "name":"Greer Moxom", "longitude": "-98.92286675"}
+{"latitude": "36.26331942", "user_id": 8, "name":"Jemmie Maddy", "longitude": "-99.75386785"}

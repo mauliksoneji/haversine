@@ -1,0 +1,32 @@
+{"latitude": "52.986375", "user_id": 12, "name": "Christina McArdle", "longitude": "-6.043701", "ans": "YES", "dd":  41.76878300179638 } 
+{"latitude": "51.92893", "user_id": 1, "name": "Alice Cahill", "longitude": "-10.27699", "dd":313.2560690694996 }
+{"latitude": "51.8856167", "user_id": 2, "name": "Ian McArdle", "longitude": "-10.4240951", "dd": 324.3753601544443}
+{"latitude": "52.3191841", "user_id": 3, "name": "Jack Enright", "longitude": "-8.5072391", "dd": 188.95962535122965}
+{"latitude": "53.807778", "user_id": 28, "name": "Charlie Halligan", "longitude": "-7.714444", "dd": 109.37660597559291}
+{"latitude": "53.4692815", "user_id": 7, "name": "Frank Kehoe", "longitude": "-9.436036", "dd": 211.17234571528056}
+{"latitude": "54.0894797", "user_id": 8, "name": "Eoin Ahearn", "longitude": "-6.18671", "ans": "YES", "dd": 83.53264314577429} 
+{"latitude": "53.038056", "user_id": 26, "name": "Stephen McArdle", "longitude": "-7.653889", "ans": "YES", "dd": 98.87473887551857} 
+{"latitude": "54.1225", "user_id": 27, "name": "Enid Gallagher", "longitude": "-8.143333", "dd": 151.54323069372705}
+{"latitude": "53.1229599", "user_id": 6, "name": "Theresa Enright", "longitude": "-6.2705202", "ans": "YES", "dd": 24.085397253653998} 
+{"latitude": "52.2559432", "user_id": 9, "name": "Jack Dempsey", "longitude": "-7.1048927", "dd": 133.2625193674618}
+{"latitude": "52.240382", "user_id": 10, "name": "Georgina Gallagher", "longitude": "-6.972413", "dd": 131.3182304056933}
+{"latitude": "53.2451022", "user_id": 4, "name": "Ian Kehoe", "longitude": "-6.238335", "ans": "YES", "dd": 10.5669536624168} 
+{"latitude": "53.1302756", "user_id": 5, "name": "Nora Dempsey", "longitude": "-6.2397222", "ans": "YES", "dd": 23.287353864512} 
+{"latitude": "53.008769", "user_id": 11, "name": "Richard Finnegan", "longitude": "-6.1056711", "ans": "YES","dd": 38.137623905958385} 
+{"latitude": "53.1489345", "user_id": 31, "name": "Alan Behan", "longitude": "-6.8422408", "ans": "YES", "dd": 44.290888406371764} 
+{"latitude": "53", "user_id": 13, "name": "Olive Ahearn", "longitude": "-7", "ans": "YES", "dd":  62.23178911536488}
+{"latitude": "51.999447", "user_id": 14, "name": "Helen Cahill", "longitude": "-9.742744", "dd": 278.2071098853852}
+{"latitude": "52.966", "user_id": 15, "name": "Michael Ahearn", "longitude": "-6.463", "ans": "YES", "dd": 43.722552098623254} 
+{"latitude": "52.366037", "user_id": 16, "name": "Ian Larkin", "longitude": "-8.179118", "dd": 168.3974182771292}
+{"latitude": "54.180238", "user_id": 17, "name": "Patricia Cahill", "longitude": "-5.920898", "ans": "YES", "dd": 96.07872654692439} 
+{"latitude": "53.0033946", "user_id": 39, "name": "Lisa Ahearn", "longitude": "-6.3877505", "ans": "YES", "dd": 38.3580708088355} 
+{"latitude": "52.228056", "user_id": 18, "name": "Bob Larkin", "longitude": "-7.915833", "dd": 166.44832484160875}
+{"latitude": "54.133333", "user_id": 24, "name": "Rose Enright", "longitude": "-6.433333", "ans": "YES", "dd": 89.03115640152528} 
+{"latitude": "55.033", "user_id": 19, "name": "Enid Cahill", "longitude": "-8.112", "dd": 223.63527035805646}
+{"latitude": "53.521111", "user_id": 20, "name": "Enid Enright", "longitude": "-9.831111", "dd": 237.57634287343615}
+{"latitude": "51.802", "user_id": 21, "name": "David Ahearn", "longitude": "-9.442", "dd": 274.79818219785534}
+{"latitude": "54.374208", "user_id": 22, "name": "Charlie McArdle", "longitude": "-8.371639", "dd": 180.15552528885}
+{"latitude": "53.74452", "user_id": 29, "name": "Oliver Ahearn", "longitude": "-7.11167", "ans": "YES", "dd": 72.2018834327323} 
+{"latitude": "53.761389", "user_id": 30, "name": "Nick Enright", "longitude": "-7.2875", "ans": "YES", "dd": 82.64296418440104} 
+{"latitude": "54.080556", "user_id": 23, "name": "Eoin Gallagher", "longitude": "-6.361944", "ans": "YES", "dd": 82.69503639251279} 
+{"latitude": "52.833502", "user_id": 25, "name": "David Behan", "longitude": "-8.522366", "dd": 161.36230241326325}

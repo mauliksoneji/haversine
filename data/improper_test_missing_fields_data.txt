@@ -1,0 +1,5 @@
+{"latitude": "36.58625616", "name": "McDonalds", "longitude": "-94.04344854"} 
+{"latitude": "37.57226133", "user_id": 1, "name": "Dominos"}
+{"latitude": "36.91002613", "user_id": 2, "name": "Taco Bell", "longitude": "-94.82896939"}
+{"latitude": "37.4248972", "user_id": 3, "name": "Subway", "longitude": "-97.07624953"}
+{"latitude": "36.90981324", "user_id": 4, "name": "White Castle", "longitude": "-97.01169491"}
