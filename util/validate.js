@@ -46,7 +46,7 @@ function checkForUniqueUserIds(points) {
   const uniqueUserIds = userIdsInPoints.filter((value, index, self) => self.indexOf(value) === index);
 
   if (uniqueUserIds.length !== points.length) {
-    throw new InvalidDataError('user_id field should be unique in points array'+ uniqueUserIds + userIdsInPoints);
+    throw new InvalidDataError('user_id field should be unique in points array' + uniqueUserIds + userIdsInPoints);
   }
 }
 

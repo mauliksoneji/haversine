@@ -48,9 +48,9 @@ module.exports = class IntegrationTestUtil {
     const max_distance = 100;
     const pointsWithinDistance = findPointsWithinRange('./data/proper_dense_test_data.txt', SOURCE_COORDINATES, max_distance);
 
-    const expectedResult = [ { name: 'Joby Rudefort', user_id: 3 },
+    const expectedResult = [{ name: 'Joby Rudefort', user_id: 3 },
     { name: 'Taco Bell', user_id: 67 },
-    { name: 'Dominos', user_id: 88 } ];
+    { name: 'Dominos', user_id: 88 }];
 
     assert.deepStrictEqual(pointsWithinDistance, expectedResult, 'testFileWithDenseProperData: Function to filter points by using Haversine Distance is not giving proper results');
   }

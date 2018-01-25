@@ -23,7 +23,9 @@ module.exports = class FileTestUtil {
   }
 
   /**
-   * Checks if the
+   * Checks if the readContentFromFileSync function does the following:
+   * 1. Reads data properly and returns an array
+   * 2. Each data point read is a JSON object
    */
   testDataFromFile() {
     const jsonData = FileUtilHelper.readContentFromFileSync('./data/data.txt');
@@ -37,7 +39,7 @@ module.exports = class FileTestUtil {
 
   /**
    * Checks if the function:
-   * 
+   *
    * 1. throws InvalidDataError if data is improper
    * 2. provides proper result if data is proper
    */
