@@ -1,0 +1,6 @@
+{
+  "latitude": 53.339428, 
+  "longitude": -6.257664, 
+  "max_distance": 100,
+  "data_path": "./data/data.txt" 
+}
