@@ -1,4 +1,4 @@
-My proudest achievement in product development would be my experience during our Software Engineering Course. We were a team of 10 students having different potentials (teams were built based on pointers, 2 people with 8+ pointer, 2 people with 7-8 pointer, 3 people with 6-7 pointer, 3 people with <6 pointer). 
+My proudest achievement in product development would be my experience during our Software Engineering Course. We were a team of 9 students having different potentials (teams were built based on pointers, 2 people with 8+ pointer, 2 people with 7-8 pointer, 2 people with 6-7 pointer, 3 people with <6 pointer). 
 The project duration was 4 months and our task was to build a product as per the requirements of the client.
  
 Initially we were tasked with selecting a team manager and I was appointed as the Team and Project Manager for the project by my team members.
