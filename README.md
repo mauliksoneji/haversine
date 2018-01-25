@@ -1,10 +1,10 @@
-== Haversine Distance Calculator ==
+#Haversine Distance Calculator
 
 Given a source point, JSON data and maximum_distance from source point; the program gives the points that are within maximum__distance from the source point.
 
 Accuracy of the program is **10E-4**.
 
-== Running the program: ==
+#Running the program
 
 There are no external node modules required to run the program.
 
@@ -16,13 +16,13 @@ To start the program, run the command **npm run start**.
 
 The configuration is listed in **config/config.json** and the data points are taken from **data/data.txt**.
 
-== Running Tests:==
+#Running Tests
 
 The test cases are in **test** folder.
 
 To run the tests, run the command **npm run test**
 
-== Design Consideration ==
+#Design Consideration
 
 1. The data and config is placed separate from code and so that it can be changed without releasing the code. You can just change the data/config and re-run program to use updated data/config.
 
