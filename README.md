@@ -4,7 +4,7 @@
 Given a source point, JSON data and maximum_distance from source point; the program gives the points that are within maximum__distance from the source point.
 
 
-## Running the program:
+## Running the program In Development/Production Environment:
 
 There are no external node modules required to run the program.
 
@@ -35,3 +35,7 @@ To run the tests, run the command **npm run test**
 3. Tests cover individual function tests of different functionalities in separate files. Integration test tests the end result given by the program. 
 
 4. To filter distances that are too far away, we have placed a planar distance filer which is faster than haversine distance and thus will weed out the far away points.
+
+5. Parameters validation: In case of any invalid data in file containing points or input parameters like max_distance, source file path or source point throws InvalidDataError or FileNotFoundError.
+
+6. Idempotent: There is no state maintained in database. Everytime you run the program by passing different parameters, it won't have any side effects.
