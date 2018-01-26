@@ -20,6 +20,7 @@ module.exports = class FileTestUtil {
     }, 'Expected to throw no such file found exception');
 
     assert.doesNotThrow(() => FileUtilHelper.readContentFromFileSync('./data/data.txt'), FileNotFoundError, 'Expected to read file content from data.txt');
+    console.log('testFileToReadFrom => Successfully Completed');
   }
 
   /**
@@ -35,6 +36,7 @@ module.exports = class FileTestUtil {
     for (const point of jsonData) {
       assert.ok(point.constructor === Object, `Expected data to contain JSON objects, instead got ${point.constructor}`);
     }
+    console.log('testDataFromFile => Successfully Completed');
   }
 
   /**
@@ -132,5 +134,6 @@ module.exports = class FileTestUtil {
 
     // check if proper data does not throw any error
     assert.doesNotThrow(() => ValidateUtilHelper.validateInput(properJSONArrayData), InvalidDataError, 'Expected data to be a proper JSON array');
+    console.log('testJSONData => Successfully Completed');
   }
 };

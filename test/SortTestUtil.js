@@ -29,5 +29,6 @@ module.exports = class SortTestUtil {
   testSortFunction() {
     const calculatedSortedData = data.sort(SortUtilHelper.sortByUserId);
     assert.deepStrictEqual(calculatedSortedData, sortedData, 'Sort By UserId Function has failed to sort by user_id');
+    console.log('testSortFunction => Successfully Completed');
   }
 };

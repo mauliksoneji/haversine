@@ -35,6 +35,7 @@ module.exports = class IntegrationTestUtil {
       }
       return false;
     }, 'Expected to throw max distance exception');
+    console.log('testInvalidInputParameters => Successfully Completed');
   }
   /**
    * Checks if reading from file having same user id content
@@ -47,6 +48,7 @@ module.exports = class IntegrationTestUtil {
       }
       return false;
     }, 'Expected to throw user_id field should be unique exception');
+    console.log('testFileWithSameUserId => Successfully Completed');
   }
 
   /**
@@ -65,6 +67,7 @@ module.exports = class IntegrationTestUtil {
       }
       return false;
     }, 'Expected to throw no property exception');
+    console.log('testFileWithMissingProperty => Successfully Completed');
   }
 
   /**
@@ -81,6 +84,7 @@ module.exports = class IntegrationTestUtil {
     { name: 'Dominos', user_id: 88 }];
 
     assert.deepStrictEqual(pointsWithinDistance, expectedResult, 'testFileWithDenseProperData: Function to filter points by using Haversine Distance is not giving proper results');
+    console.log('testFileWithDenseProperData => Successfully Completed');
   }
 
   /**
@@ -99,5 +103,6 @@ module.exports = class IntegrationTestUtil {
     { name: 'Saraann Hainge', user_id: 1595 }];
 
     assert.deepStrictEqual(pointsWithinDistance, expectedResult, 'testFileWithSparseProperData: Function to filter points by using Haversine Distance is not giving proper results');
+    console.log('testFileWithSparseProperData => Successfully Completed');
   }
 };
