@@ -16,11 +16,11 @@ module.exports = class IntegrationTestUtil {
   testInvalidInputParameters() {
     // invalid source directory path
     assert.throws(() => findPointsWithinRange(null,SOURCE_COORDINATES, 100), (err) => {
-      if ((err instanceof InvalidDataError) && /file path to read points/.test(err)) {
+      if ((err instanceof InvalidDataError) && /Invalid Path name/.test(err)) {
         return true;
       }
       return false;
-    }, 'Expected to throw file path to read points exception');
+    }, 'Expected to throw Invalid Path name exception');
 
     // invalid source directory path
     assert.throws(() => findPointsWithinRange('./data/data.txt',null, 100), (err) => {
@@ -32,11 +32,11 @@ module.exports = class IntegrationTestUtil {
 
     // invalid source directory path
     assert.throws(() => findPointsWithinRange('./data/data.txt',SOURCE_COORDINATES, null), (err) => {
-      if ((err instanceof InvalidDataError) && /max distance/.test(err)) {
+      if ((err instanceof InvalidDataError) && /Invalid max_distance/.test(err)) {
         return true;
       }
       return false;
-    }, 'Expected to throw max distance exception');
+    }, 'Expected to throw Invalid max_distance exception');
     console.log('testInvalidInputParameters => Successfully Completed');
   }
   /**

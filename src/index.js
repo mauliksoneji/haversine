@@ -13,16 +13,16 @@ const InvalidDataError = ValidationUtilHelper.InvalidDataError;
  * Checks if the Input parameters are proper
  */
 function checkInputParameters(dataSourceFileName, sourcePoint, max_distance) {
-  if (!dataSourceFileName) {
-    throw new InvalidDataError(`Expected a file path to read points data from. Got ${dataSourceFileName}`);
+  if (!dataSourceFileName || (typeof dataSourceFileName !== 'string')) {
+    throw new InvalidDataError(`Invalid Path name: ${dataSourceFileName}`);
   }
 
-  if (!sourcePoint || !('longitude' in sourcePoint) || !('latitude' in sourcePoint)) {
+  if (!sourcePoint || (typeof sourcePoint !== 'object') || !('longitude' in sourcePoint) || !('latitude' in sourcePoint)) {
     throw new InvalidDataError(`Invalid sourcePoint: ${sourcePoint}`);
   }
 
-  if (!max_distance) {
-    throw new InvalidDataError('Please provide max distance from source point to filter points');
+  if (!max_distance || (typeof max_distance !== 'number')) {
+    throw new InvalidDataError(`Invalid max_distance: ${max_distance}`);
   }
 }
 
