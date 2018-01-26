@@ -1,3 +1,5 @@
+'use strict';
+
 /**
  * Error Class of InvalidData type
  */

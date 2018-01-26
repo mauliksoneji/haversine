@@ -1,7 +1,9 @@
+'use strict';
+
 const assert = require('assert');
 
-const findPointsWithinRange = require('../src');
-const ValidateUtilHelper = require('../util/validate');
+const findPointsWithinRange = require('../../src');
+const ValidateUtilHelper = require('../../util/validate');
 
 const InvalidDataError = ValidateUtilHelper.InvalidDataError;
 

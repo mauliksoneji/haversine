@@ -1,3 +1,5 @@
+'use strict';
+
 const DEGREE_TO_RADIANS = Math.PI / 180;
 
 const EARTH_RADIUS_IN_KILOMETERS = 6371.0087714;

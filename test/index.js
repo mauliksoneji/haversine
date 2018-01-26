@@ -1,7 +1,9 @@
-const HaversineTestUtil = require('./HaversineTestUtil');
-const FileTestUtil = require('./FileTestUtil');
-const SortTestUtil = require('./SortTestUtil');
-const IntegrationTestUtil = require('./IntegrationTestUtil');
+'use strict';
+
+const HaversineTestUtil = require('./unit/HaversineTestUtil');
+const FileTestUtil = require('./unit/FileTestUtil');
+const SortTestUtil = require('./unit/SortTestUtil');
+const IntegrationTestUtil = require('./integration/IntegrationTestUtil');
 
 const haversineTestObj = new HaversineTestUtil();
 const fileTestObj = new FileTestUtil();

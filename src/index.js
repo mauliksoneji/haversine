@@ -1,3 +1,5 @@
+'use strict';
+
 const FileUtilHelper = require('../util/file');
 const SortUtilHelper = require('../util/sort');
 const ValidationUtilHelper = require('../util/validate');

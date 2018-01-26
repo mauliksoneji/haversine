@@ -1,7 +1,9 @@
+'use strict';
+
 const assert = require('assert');
 
-const FileUtilHelper = require('../util/file');
-const ValidateUtilHelper = require('../util/validate');
+const FileUtilHelper = require('../../util/file');
+const ValidateUtilHelper = require('../../util/validate');
 
 const InvalidDataError = ValidateUtilHelper.InvalidDataError;
 const FileNotFoundError = FileUtilHelper.FileNotFoundError;

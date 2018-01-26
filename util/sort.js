@@ -1,3 +1,4 @@
+'use strict';
 
 /**
  * Given two points p1 and p2,

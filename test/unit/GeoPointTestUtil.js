@@ -1,4 +1,6 @@
-const MathHelper = require('../util/math');
+'use strict';
+
+const MathHelper = require('../../util/math');
 
 /**
  * Util Class to get a Random Geo Point
@@ -26,7 +28,10 @@ module.exports = class GeoPointTestUtil {
     return GeoPointTestUtil.generateRandomDouble(-180, 180);
   }
 
-  // simple incorporation of the wikipedia formula
+  /**
+   *  simple incorporation of the wikipedia formula
+   *  Wiki: https://en.wikipedia.org/wiki/Haversine_formula#The_haversine_formula
+   */
   static slowHaversine(p1, p2) {
     const {
       latitude: lat1,

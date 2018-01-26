@@ -1,7 +1,9 @@
+'use strict';
+
 const assert = require('assert');
 const GeoPointTestUtil = require('./GeoPointTestUtil');
 
-const calculateHaversineDistance = require('../distance/haversine');
+const calculateHaversineDistance = require('../../distance/haversine');
 
 // accuracy for Haversin Delta
 const HAVERSIN_DELTA = 1E-3;

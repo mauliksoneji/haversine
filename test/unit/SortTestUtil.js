@@ -1,5 +1,7 @@
+'use strict';
+
 const assert = require('assert');
-const SortUtilHelper = require('../util/sort');
+const SortUtilHelper = require('../../util/sort');
 
 // data to sort
 const data = [
