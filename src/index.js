@@ -11,15 +11,15 @@ const InvalidDataError = ValidationUtilHelper.InvalidDataError;
  * Checks if the Input parameters are proper
  */
 function checkInputParameters(dataSourceFileName, sourcePoint, max_distance) {
-  if (!dataSourceFileName || (typeof dataSourceFileName !== 'string')) {
+  if (!ValidationUtilHelper.validateType(dataSourceFileName, 'string')) {
     throw new InvalidDataError(`Invalid Path name: ${dataSourceFileName}`);
   }
 
-  if (!sourcePoint || (typeof sourcePoint !== 'object') || !('longitude' in sourcePoint) || !('latitude' in sourcePoint)) {
+  if (!ValidationUtilHelper.validateType(sourcePoint, 'object') || !('longitude' in sourcePoint) || !('latitude' in sourcePoint)) {
     throw new InvalidDataError(`Invalid sourcePoint: ${sourcePoint}`);
   }
 
-  if (!max_distance || (typeof max_distance !== 'number')) {
+  if (!ValidationUtilHelper.validateType(max_distance, 'number')) {
     throw new InvalidDataError(`Invalid max_distance: ${max_distance}`);
   }
 }

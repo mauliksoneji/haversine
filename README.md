@@ -26,6 +26,8 @@ The test cases are in **test** folder.
 
 To run the tests, run the command **npm run test**
 
+To check coverage, run the command **npm run coverage**
+
 ## Design Consideration
 
 1. The data and config is placed separate from code and so that it can be changed without releasing the code. You can just change the data/config and re-run program to use updated data/config.

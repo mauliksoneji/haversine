@@ -75,7 +75,20 @@ function validateInput(points) {
   console.timeEnd('validateInput');
 }
 
+/**
+ * Checks whether the object is of expectedType
+ * @param {Object} obj
+ * @param {string} expectedType
+ */
+function validateType(obj, expectedType) {
+  if (!obj || (typeof obj !== expectedType)) {
+    return false;
+  }
+  return true;
+}
+
 module.exports = {
   validateInput,
-  InvalidDataError
+  InvalidDataError,
+  validateType
 };

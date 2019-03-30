@@ -22,8 +22,24 @@ module.exports = class IntegrationTestUtil {
       return false;
     }, 'Expected to throw Invalid Path name exception');
 
-    // invalid source directory path
+    // null source point
     assert.throws(() => findPointsWithinRange('./data/data.txt', null, 100), (err) => {
+      if ((err instanceof InvalidDataError) && /Invalid sourcePoint/.test(err)) {
+        return true;
+      }
+      return false;
+    }, 'Expected to throw Invalid sourcePoint exception');
+
+     // missing latitude source point
+    assert.throws(() => findPointsWithinRange('./data/data.txt', { longitude: 0 }, 100), (err) => {
+      if ((err instanceof InvalidDataError) && /Invalid sourcePoint/.test(err)) {
+        return true;
+      }
+      return false;
+    }, 'Expected to throw Invalid sourcePoint exception');
+
+     // missing longitude source point
+    assert.throws(() => findPointsWithinRange('./data/data.txt', { latitude: 0 }, 100), (err) => {
       if ((err instanceof InvalidDataError) && /Invalid sourcePoint/.test(err)) {
         return true;
       }
