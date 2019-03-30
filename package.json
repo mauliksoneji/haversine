@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "test": "node test/index.js"
+    "test": "node test/index.js",
+    "lint": "./node_modules/.bin/eslint .",
+    "coverage": "node_modules/.bin/lab --colors -c"
   },
   "devDependencies": {
     "babel-eslint": "^7.1.1",
@@ -13,7 +15,8 @@
     "eslint-config-airbnb": "^14.1.0",
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jsx-a11y": "^4.0.0",
-    "eslint-plugin-react": "^6.9.0"
+    "eslint-plugin-react": "^6.9.0",
+    "@hapi/lab": "18.1.1"
   },
   "author": "",
   "license": "ISC"

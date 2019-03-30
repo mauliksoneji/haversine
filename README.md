@@ -10,7 +10,7 @@ There are no external node modules required to run the program.
 
 For development environment, 
 
-ESLint is configured. All the required ESLint node modules are listed in package.json. You need to **npm install or yarn** to get ESLint configurations setup.
+ESLint is configured. All the required ESLint node modules are listed in package.json. You need to **npm install** to get ESLint configurations setup.
 
 #### Installation Steps:
 1. Install [node.js](https://nodejs.org/en/download/)
