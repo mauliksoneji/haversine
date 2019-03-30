@@ -1,5 +1,3 @@
-'use strict';
-
 const HaversineTestUtil = require('./unit/HaversineTestUtil');
 const FileTestUtil = require('./unit/FileTestUtil');
 const SortTestUtil = require('./unit/SortTestUtil');

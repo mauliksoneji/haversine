@@ -1,4 +1,4 @@
-'use strict';
+
 
 const assert = require('assert');
 
@@ -15,7 +15,7 @@ module.exports = class IntegrationTestUtil {
    */
   testInvalidInputParameters() {
     // invalid source directory path
-    assert.throws(() => findPointsWithinRange(null,SOURCE_COORDINATES, 100), (err) => {
+    assert.throws(() => findPointsWithinRange(null, SOURCE_COORDINATES, 100), (err) => {
       if ((err instanceof InvalidDataError) && /Invalid Path name/.test(err)) {
         return true;
       }
@@ -23,7 +23,7 @@ module.exports = class IntegrationTestUtil {
     }, 'Expected to throw Invalid Path name exception');
 
     // invalid source directory path
-    assert.throws(() => findPointsWithinRange('./data/data.txt',null, 100), (err) => {
+    assert.throws(() => findPointsWithinRange('./data/data.txt', null, 100), (err) => {
       if ((err instanceof InvalidDataError) && /Invalid sourcePoint/.test(err)) {
         return true;
       }
@@ -31,7 +31,7 @@ module.exports = class IntegrationTestUtil {
     }, 'Expected to throw Invalid sourcePoint exception');
 
     // invalid source directory path
-    assert.throws(() => findPointsWithinRange('./data/data.txt',SOURCE_COORDINATES, null), (err) => {
+    assert.throws(() => findPointsWithinRange('./data/data.txt', SOURCE_COORDINATES, null), (err) => {
       if ((err instanceof InvalidDataError) && /Invalid max_distance/.test(err)) {
         return true;
       }
@@ -44,7 +44,7 @@ module.exports = class IntegrationTestUtil {
    * throw an InvalidDataError error
    */
   testFileWithSameUserId() {
-    assert.throws(() => findPointsWithinRange('./data/improper_test_same_user_id_data.txt',SOURCE_COORDINATES, 100), (err) => {
+    assert.throws(() => findPointsWithinRange('./data/improper_test_same_user_id_data.txt', SOURCE_COORDINATES, 100), (err) => {
       if ((err instanceof InvalidDataError) && /user_id field should be unique/.test(err)) {
         return true;
       }
@@ -63,7 +63,7 @@ module.exports = class IntegrationTestUtil {
    * throws an InvalidDataError error
    */
   testFileWithMissingProperty() {
-    assert.throws(() => findPointsWithinRange('./data/improper_test_missing_fields_data.txt',SOURCE_COORDINATES, 100), (err) => {
+    assert.throws(() => findPointsWithinRange('./data/improper_test_missing_fields_data.txt', SOURCE_COORDINATES, 100), (err) => {
       if ((err instanceof InvalidDataError) && /There is no property/.test(err)) {
         return true;
       }

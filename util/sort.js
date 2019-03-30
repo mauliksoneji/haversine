@@ -1,5 +1,3 @@
-'use strict';
-
 /**
  * Given two points p1 and p2,
  * it sorts point based on user_id field
