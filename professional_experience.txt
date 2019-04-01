@@ -1,32 +1,7 @@
-My proudest achievement in product development would be my experience during our Software Engineering Course. We were a team of 9 students having different potentials (teams were built based on pointers, 2 people with 8+ pointer, 2 people with 7-8 pointer, 2 people with 6-7 pointer, 3 people with <6 pointer). 
-The project duration was 4 months and our task was to build a product as per the requirements of the client.
- 
-Initially we were tasked with selecting a team manager and I was appointed as the Team and Project Manager for the project by my team members.
-We came in contact with a client who was situated 300 Kms away from us and the project was to build a platform for hiring blue collar services. 
-The client had very strict requirements and our assigment was to build the following three products as part of the project:
-1. Web platform for customers to hire blue collar services
-2. Android application for the worker to time his work and provide billing information.
+My proudest achievement would be when I worked on Food Search Personalization which improved our Booking Conversion rate by 23%. It also improved the Search Select percentage by 14% and the users has to scroll less now by a certain un-revealable number.
 
-Apart from this, the client stressed on submitting the following documents during the course of the project:
-1. Software Requirements Specification Document (SRS)
-2. Software Development Life cycle Document (SDLC)
-3. User Manual to use the Web platform
-4. Minutes of Meetings
+I was working with one other colleague from Data Engineering team and two other engineers from Go-Food team.My role here was to first spike out approach to take for search personalization, load testing and collecting results for latency vs throughput and writing backend service to rollout personalization to a certain percentage of users.
 
-Apart from being the Project Manager, I was also part of the team which developed the Android Application. I learnt about building User Interfaces with Android, using REST API from our PHP backend and testing with Android Studio.
+We used Golang for this service which improved the search time from 177 ms to 80 ms. The performance improvement came mainly as the service was a monolith application written in rails.I learnt a lot about using data science against elasticsearch and golang in this project. I wrote a blog about this as well, which was shared by our CEO, CPO(Product) and Head of Data Engineering(https://blog.gojekengineering.com/how-the-gojek-butler-serves-a-gourmet-meal-to-our-users-4a161d83052a)
 
-More than the Android Application Development, I learnt about team building and project management. 
-It was very tough to handle people who don't want to contribute. I had to sit with them on a regular basis so that I can make sure that they are working and can deliver their work on time.
-My team consisted of two people who had a big fight earlier and hence not talk pleasantly with each other, One was part of the Web Development Team and other was part of the Testing Team. I made sure that despite their rivalry, the web development team submits their code to testing team on time.
-
-We faced many setbacks like when we fell behind on schedule due to college exams, when the client asked us to make several iterations to Software Requirements Specification Document and our course instructor spend time as a team to study COCOMO model.
-
-Despite these setbacks, we were able to complete the project and get the Software Acceptance Letter from the client.
-
-This was my first experience with Project Management and It made me realise how software development is a process containing different parts like Requirement Gathering, Designing, Software Development and Testing.
-
-There are still many things that I learnt from the project which would be too long to explain. You can ask me details if we proceed with the hiring process.
-
-I still have the code and documents that we developed during the project with me.
-These can be found out here: 
-https://drive.google.com/drive/u/0/folders/0BxcIbEip2qh8fjZfeHNzcldzVThUaGZSd2RFS0ZMYUFrRTZMOWdoVWQxdjNoY2h4OFdvRVU
+I will be presenting about this at O'reilly's AI Conference Beijing. This project was a collaboration effort between Data Engineering team and Go-Food. 
